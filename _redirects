@@ -1,9 +1,1 @@
-DirectoryIndex index.html
-
-RewriteEngine On
-
-# Redirect requests that are not for existing files or directories to index.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [L]
 /*    /index.html   200
