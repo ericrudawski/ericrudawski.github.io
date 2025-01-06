@@ -1,8 +1,26 @@
-# ericrudawski.github.io
+# Tokyo React Personal Portfolio Template
 
-hey there! this is just a personal site. 
+## Description
+Setup Procedure
+## Project setup
+```
+npm install
+```
 
--purchased a website template online, thinking it would just be HTML. 
--realized it was a react app
--refused to buy another template
--learned to code it so I could make updates
+### Compiles and hot-reloads for development
+```
+npm run start
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration (vue-cli)
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .shoe-box {
+    width: 200px;
+    height: 120px;
+    background: brown;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  
+  .lid {
+    width: 100%;
+    height: 20px;
+    background: tan;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .shoe-box-body {
+    width: 100%;
+    height: 100%;
+    background: burlywood;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .item {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
