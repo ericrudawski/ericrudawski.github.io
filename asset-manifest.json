@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a7f5681e.css",
+    "main.js": "/static/js/main.66f85e18.js",
+    "static/js/27.01d0b5aa.chunk.js": "/static/js/27.01d0b5aa.chunk.js",
+    "static/media/1.jpg": "/static/media/1.868e73fc51878f9a4136.jpg",
+    "static/media/Notions.png": "/static/media/Notions.f3a12a2c0fb299fd078a.png",
+    "static/media/ATMan.jpg": "/static/media/ATMan.df0d0d2659109e9110e8.jpg",
+    "static/media/primeicons.svg": "/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/person2d.svg": "/static/media/person2d.e357b6bef40c88c33a32.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/person3d.svg": "/static/media/person3d.061f1dd0663e5d150d34.svg",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/person1d.svg": "/static/media/person1d.96d8044c097a54f65a63.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a7f5681e.css",
+    "static/js/main.66f85e18.js"
+  ]
+}
