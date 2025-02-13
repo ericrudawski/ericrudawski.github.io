@@ -2,7 +2,7 @@
   "name": "tokyo",
   "version": "2.3.0",
   "private": true,
-  "homepage": "https://ericrudawski.com",
+  "homepage": "https://www.ericrudawski.com",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -54,5 +54,8 @@
       "last 1 safari version",
       "last 1 firefox version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
