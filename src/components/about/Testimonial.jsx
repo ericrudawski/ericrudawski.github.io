@@ -10,12 +10,13 @@ const Testimonial = () => {
 
   var settings = {
     dots: false,
-    arrow: false,
+    arrows: true,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 991,
