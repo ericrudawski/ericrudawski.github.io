@@ -5,7 +5,7 @@ const TestimonialPopup = () => {
     <div>
       {/* Your testimonials content goes here */}
       {/* <h2>Testimonials</h2> */}
-      <p>"Eric is an all star [analyst] recognoized locally and regionally at all levels of the organization for his ability to drive performance improvement."</p>
+      <p>"Eric is an all star [analyst] recognized locally and regionally at all levels of the organization for his ability to drive performance improvement."</p>
       <p>"He is always first to volunteer to help, even when he's stretched himself. [He] can be relied upon to help put out fires and create long term solutions."</p>
       <p>"Eric embraces change and proactively seeks new ways to do things more efficiently and effectively"</p>
       <p>"He is well respected throughout the organization for his innovative approaches and ability to generate better solutions."</p>
