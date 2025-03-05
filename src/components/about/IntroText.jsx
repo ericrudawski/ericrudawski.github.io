@@ -17,33 +17,34 @@ function IntroText() {
         </a>
       </div>
       <div className="spacer"></div>
-      <div className={`content ${isExpanded ? "expanded" : "collapsed"}`}>
-      {/* {isExpanded && ( */}
+      <div
+        className={`content ${isExpanded ? "expanded" : "collapsed"}`}
+        style={{
+          position: "relative",
+          zIndex: 1,
+        }}
+      >
+        {/* {isExpanded && ( */}
         {/* <div> */}
-        <p style={{paddingBottom: '40px'}}></p>
-          <p>
-            Not to wax too philosophically, but I believe the most enduring
-            thing about humanity is its ability to acquire new knowledge. It’s
-            truly a wonder to see learning in action, and it’s how we’ve
-            domesticated animals, tamed landscapes, and shaped the world to be
-            what it is today (for better or worse).<br></br>
-          </p>
-          <p>
-            I like to learn, and then use my new insights or skills to solve the
-            hardest problems; that has been the bedrock of my career. One
-            learning that I utilize often is the importance of bringing the
-            right people together and collaborating across teams. This allows
-            knowledge to compound and novel approaches to come to light. I
-            combine my interpersonal skills with the understanding that
-            technical excellence lets teams perform at the highest level, and so
-            am always aiming to keep my skills sharp.<br></br>
-          </p>
-          <p>
-            I lean into what is tough because what is tough is worth doing. My
-            clients and peers can and do rely on me as a thought partner so that
-            we can move the needle together.<br></br>
-          </p>
-          <p>{"//end"}</p>
+        <p style={{ paddingBottom: "40px" }}></p>
+        <p>
+          I like to learn. Humans have the unique advantage of learning and
+          adapting over time - it's how we've tamed our landscapes and put
+          people in space. Learning is how we make progress.<br></br> That said,
+          learning doesn't stand on it's own - progress needs a vector. It's
+          important to continuously ask what problem you're solving and think
+          about what's would be gained if the problem didn't exist.<br></br>
+          <br></br>
+          Once there's a problem worth solving, it's time to get to work.{" "}
+          <br></br>I believe in executing quickly, building relationships, and
+          leveraging technical expertise to compound knowledge from diverse
+          sources. This helps deliver consistent results without compromising on
+          quality. <br></br>
+          <br></br>I lean into what is tough because what is tough is worth
+          doing. My teams know they can rely on me as a leader and thought
+          partner to solve the hardest problems.<br></br>
+        </p>
+        <p>{"//end"}</p>
       </div>
     </>
   );

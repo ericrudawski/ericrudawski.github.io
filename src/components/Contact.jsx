@@ -20,7 +20,7 @@ const Home = () => {
         {/* END AVATAR */}
         <div className="details">
           <h3 className="name">Eric Rudawski</h3>
-          <p className="job">Experienced finance leader, voracious reader.</p>
+          <p className="job"></p>
           <div
             className="job latin_hover"
             onMouseEnter={() => setIsHovered(true)}

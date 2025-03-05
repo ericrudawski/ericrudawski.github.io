@@ -15,7 +15,7 @@ const Intro = () => {
       <p>
           Thanks for visiting my small corner of the internet.<br></br> I built this website
           to add color to my professional resume (linked below), but also as a
-          harbor for assorted personal reflections and ventures.
+        sort of digital shoebox for personal reflections and ventures.
         </p>
         
         <p style={{paddingBottom: '8px'}}></p>

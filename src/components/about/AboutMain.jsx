@@ -37,8 +37,16 @@ const AboutMain = () => {
           </div>
           {/* End personal info */}
 
-          <div className="tokyo_tm_button" data-position="left" style={{ marginBottom: '40px'}}>
-          <a href="assets/img/cv.pdf" download>
+          <div 
+            className="tokyo_tm_button" 
+            data-position="left" 
+            style={{ 
+              marginBottom: '40px',
+              position: 'relative',
+              zIndex: 2  // Higher than the content container
+            }}
+          >
+            <a href="assets/img/cv.pdf" download>
               <span>Download Resume</span>
             </a>
           </div>
@@ -103,7 +111,7 @@ closeTimeoutMS={500}
         <div className="extra">
           <p className="date">
             Selection of kind words || 
-            Last updated: October 2023
+            Last updated: January 2025
           </p>
         </div>
         <h3 className="title">

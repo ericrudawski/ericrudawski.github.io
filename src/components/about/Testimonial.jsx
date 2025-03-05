@@ -5,42 +5,43 @@ import Social from "../Social";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Testimonial component displays a slider of testimonials using react-slick
 const Testimonial = () => {
 
-
+  // Settings for the slider component
   var settings = {
-    dots: false,
-    arrow: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
+    dots: false, // Hide navigation dots
+    arrow: false, // Hide navigation arrows
+    infinite: true, // Enable infinite scrolling
+    speed: 2000, // Transition speed in ms
+    slidesToShow: 2, // Show 2 slides at a time
+    slidesToScroll: 1, // Scroll 1 slide at a time
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 5000, // Autoplay interval in ms
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 991, // Tablet breakpoint
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Show 2 slides on tablets
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 576, // Mobile breakpoint
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Show 1 slide on mobile
         },
       },
     ],
   };
 
-
-
+  // Array of testimonial content
   const testimonialContent = [
     {
       id: 1,
       text: `[Eric is] a pleasure to work with--flexible thinker, takes initiative, curious and interested in learning more about our practice; innovative.`,
-      avatar: "url(assets/img/svg/person1.svg)",
+      avatar: "url(assets/img/svg/person1.svg)", // Avatar image URL
       name: "Customer Feedback #1",
-      // designation: "Graphic Designer",
+      // designation: "Graphic Designer", // Commented out designation
     },
     {
       id: 2,
@@ -69,17 +70,12 @@ const Testimonial = () => {
               </div>
               <div className="details">
                 <div className="image">
-                  {/* <div
-                    className="main"
+                  {/* Custom avatar display with person-specific class */}
+                  <div
+                    className={`main person-${item.id}`}
                     style={{
                       backgroundImage: item.avatar,
-                    }} */}
-                    <div
-            className={`main person-${item.id}`} // Add a custom class based on item.id
-            style={{
-              backgroundImage: item.avatar,
-            }}
-
+                    }}
                   />
                 </div>
                 <div className="info">
@@ -92,10 +88,7 @@ const Testimonial = () => {
         ))}
       </Slider>
     </ul>
-    
   );
 };
-
-
 
 export default Testimonial;

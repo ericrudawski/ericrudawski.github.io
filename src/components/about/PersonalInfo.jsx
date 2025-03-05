@@ -9,7 +9,7 @@ const PersonalInfo = () => {
         {
           id: 2,
           name: "Languages",
-          content: "English, Polish, Spanish, French",
+          content: "English, Polish, Spanish (B1), French (A1)",
         },
         // {
         //   // id: 2,
@@ -19,7 +19,7 @@ const PersonalInfo = () => {
         {
           id: 1,
           name: "Located In",
-          content: "San Jose",
+          content: "California",
         },
         {
           id: 4,
@@ -30,16 +30,16 @@ const PersonalInfo = () => {
             </>
           ),
         },
-        {
-          id: 5,
-          name: "Phone",
-          content: (
-            <>
-              {/* <a href="tel:+1 408 693 9389">408-693-9389</a> */}
-            Available upon request
-            </>
-          ),
-        },
+        // {
+        //   id: 5,
+        //   name: "Phone",
+        //   content: (
+        //     <>
+        //       {/* <a href="tel:+1 408 693 9389">408-693-9389</a> */}
+        //     Available upon request
+        //     </>
+        //   ),
+        // },
       ],
     },
     {
@@ -61,15 +61,15 @@ const PersonalInfo = () => {
           name: "Degree",
           content: "BS, Finance",
         },
+        // {
+        //   id: 4,
+        //   name: "Interests",
+        //   content: "🪚 🎧 ⚾️",
+        // },
         {
           id: 4,
-          name: "Interests",
-          content: "🪚 🎧 ⚾️",
-        },
-        {
-          id: 5,
-          name: "Now reading",
-          content: "Wherever You Go, There You Are",
+          name: "Now Reading",
+          content: "The Perfectionist's Guide to Losing Control",
         },
       ],
     },
