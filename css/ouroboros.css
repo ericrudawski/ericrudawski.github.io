@@ -1,0 +1,62 @@
+/* The crises as an ouroboros (js/variants/ouroboros.js), used by both Composites. Takes --ink, --ink2, --card, --paper, --rule, --accent, --mono and --serif from the page.
+   The medals and snake are two inks, --ma and --mb. */
+.ou-text h3 { font-weight: 400; }
+.ou-text a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.ou { font-variant-numeric: oldstyle-nums proportional-nums; }
+.ou-medal { background: none; border: 0; cursor: pointer; color: inherit; font: inherit; }
+.ou { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 40px; align-items: center; margin-top: 8px; --ma: var(--ink); --mb: var(--card); }
+.ou-defs { position: absolute; }
+.ou-stage { position: relative; aspect-ratio: 1; container-type: inline-size; }
+.ou-snake { position: absolute; inset: 0; transform: rotate(var(--turn, 0deg)); transition: transform 1.7s cubic-bezier(.16, .84, .26, 1); will-change: transform; }
+.ou-snake-art { display: block; width: 100%; height: 100%; overflow: visible; animation: ou-breathe 7s ease-in-out infinite; transform-origin: 50% 50%; }
+@keyframes ou-breathe { 0%, 100% { transform: rotate(-.9deg); } 50% { transform: rotate(.9deg); } }
+.ou-snake-art .ou-paper { fill: var(--mb); }
+.ou-snake-art .ou-ink { fill: var(--ma); }
+.ou-snake-art .ou-out { fill: none; stroke: var(--ma); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.ou-snake-art .ou-scale { fill: none; stroke: var(--ma); stroke-width: 1; stroke-opacity: .58; }
+.ou-snake-art .ou-plate { fill: none; stroke: var(--ma); stroke-width: 1.15; }
+.ou-snake-art .ou-belt { fill: none; stroke: var(--ma); stroke-width: 1.5; }
+.ou-snake-art .ou-hatch { fill: none; stroke: var(--ma); stroke-width: 1.05; }
+.ou-snake-art .ou-dia, .ou-snake-art .ou-halo { fill: var(--ma); stroke: var(--mb); stroke-width: 5; stroke-linejoin: round; paint-order: stroke; }
+.ou-snake-art .ou-halo { stroke-width: 3; }
+.ou-snake-art .ou-pip { fill: var(--mb); }
+.ou-snake-art .ou-thin { fill: none; stroke: var(--ma); stroke-width: 1.2; }
+.ou-snake-art .ou-hinge { fill: none; stroke: var(--ma); stroke-width: 2.4; stroke-linecap: round; }
+.ou-snake-art .ou-tooth { stroke: var(--ma); stroke-width: 1.3; stroke-linejoin: round; }
+.ou-snake-art .ou-brow { fill: none; stroke: var(--ma); stroke-width: 4.6; stroke-linecap: round; }
+.ou-snake-art .ou-iris { fill: var(--accent); }
+.ou-center { position: absolute; left: 50%; top: 50%; width: 32%; transform: translate(-50%, -50%); text-align: center; pointer-events: none; }
+.ou-center b { display: block; font: italic 400 11.5cqw/1 "IM Fell English", var(--serif); font-variant-numeric: lining-nums; }
+.ou-center span { display: block; margin-top: 1cqw; font: 700 1.95cqw/1.25 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink2); }
+.ou-medal { position: absolute; width: 15%; aspect-ratio: 1; padding: 0; border-radius: 50%; transform: translate(-50%, -50%); transition: transform .25s cubic-bezier(.2, .9, .3, 1.3), filter .2s; --ma: var(--ink); --mb: var(--card); }
+.ou-medal svg { display: block; width: 100%; height: 100%; border-radius: 50%; }
+.ou-medal .k, .ou-medal .kt { fill: var(--ma); }
+.ou-medal .s { fill: none; stroke: var(--ma); stroke-linecap: round; stroke-linejoin: round; }
+.ou-medal .t { fill: none; stroke: var(--ma); stroke-width: .8; stroke-linecap: round; }
+.ou-medal .p { fill: var(--mb); stroke: var(--ma); stroke-linejoin: round; }
+.ou-medal .w { fill: var(--mb); }
+.ou-medal .u { fill: none; stroke: var(--mb); stroke-linecap: round; stroke-linejoin: round; }
+.ou-medal .v { fill: none; stroke: var(--mb); stroke-width: .8; stroke-linecap: round; }
+.ou-medal:hover { transform: translate(-50%, -50%) scale(1.05); }
+.ou-medal.on { --ma: var(--card); --mb: var(--ink); transform: translate(-50%, -50%) scale(1.1); box-shadow: 0 0 0 3px var(--paper), 0 0 0 6px var(--accent); }
+.ou-medal.on { z-index: 2; }
+.ou-medal:focus-visible { outline-offset: 5px; border-radius: 50%; }
+/* every description is laid out, unseen, in one spot behind the one showing, so the space is always that of the longest and flipping through them changes no heights */
+.ou-box { display: grid; align-self: center; min-width: 0; }
+.ou-box > *, .ou-sizer > * { grid-area: 1 / 1; min-width: 0; }
+.ou-sizer { display: grid; visibility: hidden; }
+.ou-text.in { animation: ou-in .4s ease-out; }
+@keyframes ou-in { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: none; } }
+.ou-text .name { font: 700 12px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink2); margin-bottom: 6px; }
+.ou-text h3 { font-size: 36px; line-height: 1.06; text-wrap: balance; }
+.ou-text dl { margin: 18px 0 0; }
+.ou-text dl div { padding: 11px 0 12px; border-top: 1px solid var(--rule); }
+.ou-text dt { font: 700 11.5px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+.ou-text dd { margin: 5px 0 0; font-size: 19.5px; line-height: 1.34; }
+.ou-text .caps { font-variant-caps: all-small-caps; letter-spacing: .05em; }
+.ou-text .damage { padding-top: 10px; border-top: 3px double var(--ink); font: 400 13px/1.45 var(--mono); }
+.ou-text .damage b { margin-right: 7px; letter-spacing: .1em; text-transform: uppercase; }
+.ou-text a { display: inline-block; margin-top: 8px; padding: 4px 0; font: 700 12.5px/1.3 var(--mono); text-decoration-color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .ou-snake { transition: none; } .ou-snake-art, .ou-text.in { animation: none; } }
+@media (max-width: 860px) { .ou { grid-template-columns: minmax(0, 1fr); gap: 22px; } .ou-stage { max-width: 560px; width: 100%; margin: 0 auto; } }
+@media (max-width: 640px) { .ou-text h3 { font-size: 30px; } .ou-text dd { font-size: 18px; } .ou-center span { font-size: 2.5cqw; } }
